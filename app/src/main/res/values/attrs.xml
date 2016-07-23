@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IconWithTextView">
+        <attr name="wx_icon" format="reference"></attr>
+        <attr name="wx_text" format="string"></attr>
+        <attr name="wx_text_size" format="dimension"></attr>
+        <attr name="wx_text_color" format="color"></attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.itheima09.wxface.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2B2B2B">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.itheima09.wxface.IconWithTextView
+            android:id="@+id/tab_weixin"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            app:wx_icon="@mipmap/tab_weixin_normal"
+            android:layout_height="match_parent"
+            app:wx_text="@string/app_name"
+            android:layout_weight="1" />
+
+        <com.itheima09.wxface.IconWithTextView
+            android:id="@+id/tab_address"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            app:wx_icon="@mipmap/tab_address_normal"
+            app:wx_text="@string/tab_address"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.itheima09.wxface.IconWithTextView
+            android:id="@+id/tab_find"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            app:wx_icon="@mipmap/tab_find_frd_normal"
+            app:wx_text="@string/tab_find"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.itheima09.wxface.IconWithTextView
+            android:id="@+id/tab_setting"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            app:wx_text="@string/tab_setting"
+            app:wx_icon="@mipmap/tab_settings_normal"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
